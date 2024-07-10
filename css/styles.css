@@ -21,7 +21,7 @@ body {
 }
 
 #logo {
-    width: 5%;
+    width: 7rem;
 }
 
 ul {
@@ -30,6 +30,7 @@ ul {
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Reset the buttons css */
@@ -42,7 +43,13 @@ button {
   border-radius: 100vmax;
   padding: .4em .7em;
   transition: box-shadow .3s;
-  text-transform: uppercase;
+}
+
+#shiny {
+    background-color: red;
+    width: 150px;
+    align-self: center;
+    font-size: 28px;
 }
 
 button:hover {
@@ -77,9 +84,9 @@ button:hover {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 5rem;
+    font-size: 8rem;
     z-index: -1;
-    color: lightgray;
+    color: rgb(161, 161, 161);
 }
 
 .pokemon-image {
@@ -105,30 +112,24 @@ button:hover {
     gap: .5rem;
 }
 
+.pokemon-id, .stat, .pokemon-type .type{
+    border-radius: 100vmax;
+    padding: .15em .3em;
+}
+
 .pokemon-id, .stat {
     background-color: #ececec;
     font-size: 18px;
-    cursor: pointer;
-    border-radius: 100vmax;
-    padding: .1em .3em;
 }
 
 .pokemon-type {
     display: flex;
-    gap: .7rem;
-    font-weight: 500;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.type {
-    padding: .1em .3em;
-    border-radius: 100vmax;
+    gap: 1rem;
 }
 
 .pokemon-stats {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: .7rem;
 }
